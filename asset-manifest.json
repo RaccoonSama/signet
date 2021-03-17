@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/RaccoonSama/signet.git/static/css/main.df90d0de.chunk.css",
-    "main.js": "/RaccoonSama/signet.git/static/js/main.d523419d.chunk.js",
-    "main.js.map": "/RaccoonSama/signet.git/static/js/main.d523419d.chunk.js.map",
-    "runtime-main.js": "/RaccoonSama/signet.git/static/js/runtime-main.da3e2ff1.js",
-    "runtime-main.js.map": "/RaccoonSama/signet.git/static/js/runtime-main.da3e2ff1.js.map",
-    "static/js/2.cd5aa7fc.chunk.js": "/RaccoonSama/signet.git/static/js/2.cd5aa7fc.chunk.js",
-    "static/js/2.cd5aa7fc.chunk.js.map": "/RaccoonSama/signet.git/static/js/2.cd5aa7fc.chunk.js.map",
-    "index.html": "/RaccoonSama/signet.git/index.html",
-    "static/css/main.df90d0de.chunk.css.map": "/RaccoonSama/signet.git/static/css/main.df90d0de.chunk.css.map",
-    "static/js/2.cd5aa7fc.chunk.js.LICENSE.txt": "/RaccoonSama/signet.git/static/js/2.cd5aa7fc.chunk.js.LICENSE.txt"
+    "main.css": "/signet/static/css/main.df90d0de.chunk.css",
+    "main.js": "/signet/static/js/main.d523419d.chunk.js",
+    "main.js.map": "/signet/static/js/main.d523419d.chunk.js.map",
+    "runtime-main.js": "/signet/static/js/runtime-main.e2c7efbf.js",
+    "runtime-main.js.map": "/signet/static/js/runtime-main.e2c7efbf.js.map",
+    "static/js/2.cd5aa7fc.chunk.js": "/signet/static/js/2.cd5aa7fc.chunk.js",
+    "static/js/2.cd5aa7fc.chunk.js.map": "/signet/static/js/2.cd5aa7fc.chunk.js.map",
+    "index.html": "/signet/index.html",
+    "static/css/main.df90d0de.chunk.css.map": "/signet/static/css/main.df90d0de.chunk.css.map",
+    "static/js/2.cd5aa7fc.chunk.js.LICENSE.txt": "/signet/static/js/2.cd5aa7fc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.da3e2ff1.js",
+    "static/js/runtime-main.e2c7efbf.js",
     "static/js/2.cd5aa7fc.chunk.js",
     "static/css/main.df90d0de.chunk.css",
     "static/js/main.d523419d.chunk.js"
