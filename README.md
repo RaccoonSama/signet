@@ -1,4 +1,3 @@
-# Exercice #1 - Solution
+# exercice en classe
 
-Solution modèle de l'exercice #1 du cours 582-4PA.
-Structure de composants et formatage de l'application *Signets* utilisant **React**, **Create React App**, **Sass** et **Material-UI**.
+exercice utiliser dans le cours 582-4PA - les bases des apis *Firebase* dans *React*
