@@ -8,7 +8,7 @@ export default function Entete() {
   return (
     <header className="Entete">
       <div className="logo">Signets</div>
-      <div className="utilisateur">Camille Semaan <Avatar className="avatar" alt="Camille Semaan" src={avatarImg} /></div>
+      <div className="utilisateur">Luna Gagnon Lavoie <Avatar className="avatar" alt="Luna Gagnon Lavoie" src={avatarImg} /></div>
     </header>
   );
 }
