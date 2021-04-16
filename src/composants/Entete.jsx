@@ -4,6 +4,7 @@ import { Avatar } from '@material-ui/core';
 import Button from '@material-ui/core/Button'; 
 import avatarImg from '../images/avatar.png';
 import firebase from 'firebase/app';
+import {instanceFirebaseAuth} from '../service/firebase';
 
 export default function Entete(props) {
   const utilisateur = props.utilisateur;
@@ -14,7 +15,7 @@ export default function Entete(props) {
       variant="outlined"
       size="small"
       className="btnDeco"
-      onClick={()=>firebase.auth().signOut()}
+      onClick={()=>instanceFirebaseAuth.signOut()}
       >  
         Déconnexion</Button>
       

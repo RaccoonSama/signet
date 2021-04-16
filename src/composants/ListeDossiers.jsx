@@ -1,21 +1,18 @@
 import './ListeDossiers.scss';
 import Dossier from './Dossier';
-import dbFirestore from '../data/firebase';
 import { useState, useEffect } from 'react';
+import * as crudDossiers from '../service/crud-dossier';
 
 
 
-export default function ListeDossiers() {
+export default function ListeDossiers({utilisateur}) {
   const [dossiers, setDossiers] = useState([]);
 
   useEffect(
-    () => dbFirestore.collection('dossier-temp').get().then(
-        reponse => {
-        let dossiersTemp = [];
-        reponse.forEach(doc =>  dossiersTemp.push({id: doc.id, ...doc.data() })); 
-        setDossiers(dossiersTemp);
-      }
-    ), []
+    () => crudDossiers.lireTout(utilisateur.uid).then(
+      lesDossiers => setDossiers(lesDossiers)
+    )
+    , []
   );
 
   return (

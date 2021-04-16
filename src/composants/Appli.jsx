@@ -6,15 +6,23 @@ import AddIcon from '@material-ui/icons/Add';
 import Acceuil from './Acceuil';
 import { useEffect, useState } from 'react';
 import firebase from 'firebase/app';
-
+import {instanceFirestore} from '../service/firebase';
+import {instanceFirebaseAuth} from '../service/firebase';
+import {collUtil} from '../service/config';
 
 export default function Appli() {
   const [utilisateur, setUtilisateur] = useState(null);
 
   useEffect(() =>
   {
-    firebase.auth().onAuthStateChanged(
-      util => setUtilisateur(util)
+    instanceFirebaseAuth.onAuthStateChanged(
+      util => {
+        setUtilisateur(util);
+        instanceFirestore.collection(collUtil).doc(util.uid).set(
+          {nom: util.displayName, courriel: util.email},
+          {merge: true}
+        )
+      }
     )
   }
   
@@ -28,7 +36,7 @@ export default function Appli() {
       <>
        <Entete utilisateur={utilisateur}/>
         <section className="contenu-principal">
-          <ListeDossiers />
+          <ListeDossiers utilisateur={utilisateur}/>
           <Fab className="ajoutRessource" color="primary" aria-label="Ajouter dossier">
             <AddIcon />
           </Fab>
